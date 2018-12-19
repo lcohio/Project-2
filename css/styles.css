@@ -1,0 +1,162 @@
+/* BASE STYLES */
+
+html, body {
+	font-family: Ubuntu;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-top: 15px;
+}
+
+.header-wrapper {
+	text-align: center;
+	background-color: #f9f9f9;
+	overflow: auto;
+}
+
+.header-wrapper ul li {
+	margin: 35px;
+}
+
+p {
+	margin: 5px 15px 35px 15px;
+	line-height: 1.7em;
+}
+
+.content {
+	text-align: center;
+
+}
+
+footer {
+	text-align: center;
+	background-color: #f9f9f9;
+	overflow: auto;
+	padding-bottom: 20px;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.top-image {
+	max-width: 75%;
+	height: auto;
+}
+
+.section-heading {
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.header-wrapper ul {
+	list-style-type: none;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 35px;  
+}
+
+.content ul {
+	list-style-type: none;
+	margin-right: 32px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+a, a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.footer-nav {
+	margin-top: 19px;
+}
+
+/* MEDIA STYLES */
+
+@media (min-width: 768px) {
+	
+	.header-wrapper ul li {
+		display: inline-block;
+		margin-top: 15px;
+	}
+
+	.top-p {
+		text-align: left;
+	}
+
+	.top-image {
+		float: right;
+		margin-right: 55px;
+	}
+
+	.header-wrapper p {
+		margin-top: 36px;
+		max-width: 45%;
+	}
+
+	.content ul {
+  		display: grid;
+  		grid-template-columns: repeat(2, 1fr);
+  		grid-gap: 2px;
+  		list-style-type: none;
+  		margin-right: 35px;
+	}
+}
+
+@media (min-width: 1024px) {
+	
+	.content ul {
+  		display: grid;
+  		grid-template-columns: repeat(3, 1fr);
+  		grid-gap: 2px;
+	}
+
+	#top {
+		float: left;
+		margin-left: 50px;
+		padding-bottom: 30px;
+		
+	}
+
+	.header-wrapper p {
+		margin-left: 50px;
+	}
+
+	.header-wrapper ul {
+		text-align: right;
+		margin-bottom: 20px;
+		margin-top: 35px;
+	}
+
+	.header-wrapper {
+		padding-bottom: 35px;
+	}
+
+	footer p {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 50%;
+	}
+
+}
