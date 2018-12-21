@@ -37,7 +37,7 @@ footer {
 	padding-bottom: 20px;
 }
 
-.footer-links {
+.footer-nav-mobile {
 	display: flex;
 	justify-content: space-between;
 	text-transform: uppercase;
@@ -89,7 +89,11 @@ a, a:visited {
 }
 
 .footer-nav {
-	margin-top: 19px;
+	padding-top: 18px;
+}
+
+.footer-nav-desktop {
+	display: none;
 }
 
 /* MEDIA STYLES */
@@ -121,6 +125,38 @@ a, a:visited {
   		grid-gap: 2px;
   		list-style-type: none;
   		margin-right: 35px;
+	}
+
+	.footer-nav-mobile {
+		display: none;
+	}
+
+	.footer-nav-desktop {
+		display: block;
+	}
+
+	.footer-nav-desktop ul {
+		float: right;
+		padding-top: 35px;
+	}
+
+	.footer-nav-desktop ul li {
+		display: inline-block;
+		list-style-type: none;
+		font-size: 1.2em;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-right: 20px;
+		margin-left: 20px;
+		padding-bottom: 30px;
+	}
+
+	.footer-name {
+		float: left;
+		font-size: 1.3em;
+		font-weight: bold;
+		padding-top: 30px;
+		padding-left: 20px;
 	}
 }
 
@@ -158,5 +194,4 @@ a, a:visited {
 		margin-right: auto;
 		max-width: 50%;
 	}
-
 }
